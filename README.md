@@ -35,7 +35,7 @@ Ada dua cara untuk tamu bisa masuk:
 2. **TAMU masuk by TAMU sendiri**: Tamu harus terkoneksi ke jaringan, kemudian memilih rumah tujuan. Mereka harus menunggu persetujuan dari penghuni rumah, jika disetujui, maka tamu dapat masuk. Jika ditolak atau tidak ada tindakan, maka tamu tidak boleh masuk.
 
 ## Blok Diagram
-
+```
 +-------------------+   +-------------------+   +---------------+
 |   Kamera          |   |  Sensor Proximity |   |    Raspi      |
 |   (Input)         |-->|  (Input)          |-->|    (Proses)   |
@@ -47,6 +47,7 @@ Ada dua cara untuk tamu bisa masuk:
                                                |    Servo      |
                                                |   (Output)    |
                                                +---------------+
+```
 
 
 ## License
