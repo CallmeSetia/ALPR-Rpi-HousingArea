@@ -52,4 +52,5 @@ Ada dua cara untuk tamu bisa masuk:
 
 ## License
 
-Proyek ini berada di bawah lisensi [MIT](https://opensource.org/licenses/MIT).
+Proyek ini berada di bawah lisensi [ Apache License
+                           Version 2.0,](#).
