@@ -15,7 +15,7 @@ Software:
 - GPIO
 - Python 3.7+
 - MySQL
-- Laravel 9 (BACKEND) + Vue 3 (Front) (digabungkan dengan laravel-mix)
+- Laravel 5 (BACKEND) + Vue 3 (Front) 
 - Android Studio : For Notification Controller & WebView
 - OpenCV 3+  
 - PyTesseract (OCR) 
