@@ -28,6 +28,8 @@ class RouteServiceProvider extends ServiceProvider
             return Limit::perMinute(60)->by($request->user()?->id ?: $request->ip());
         });
 
+        $this->configureRateLimitingLogin();
+
         $this->routes(function () {
             Route::middleware('api')
                 ->prefix('api')
@@ -37,4 +39,12 @@ class RouteServiceProvider extends ServiceProvider
                 ->group(base_path('routes/web.php'));
         });
     }
+
+    protected function configureRateLimitingLogin()
+    {
+        RateLimiter::for('login', function (Request $request) {
+            return Limit::perMinute(5)->by($request->input('username') . '|' . $request->ip());
+        });
+    }
+
 }
