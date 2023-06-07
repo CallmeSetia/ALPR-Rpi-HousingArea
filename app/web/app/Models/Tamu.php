@@ -9,6 +9,12 @@ class Tamu extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'nama',
+        'plat',
+        'approved_by',
+        'rumah_id',
+    ];
 
     public function rumah()
     {
