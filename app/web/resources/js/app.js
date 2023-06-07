@@ -1,15 +1,31 @@
-import {createApp} from 'vue'
-import store from "./util/store.js";
-import router from "./router/router";
-import App from './App.vue'
-import 'flowbite';
-import VueSweetalert2 from 'vue-sweetalert2';
-import 'sweetalert2/dist/sweetalert2.min.css';
-
-
-
-createApp(App)
-    .use(router)
-    .use(store)
-    .use(VueSweetalert2)
-    .mount("#app")
+// import { createApp, h } from "vue";
+// import { createInertiaApp } from "@inertiajs/vue3";
+// import MainLayout from "./App.vue";
+// import { ZiggyVue } from 'ziggy';
+// import '../css/app.css';
+//
+// createInertiaApp({
+//     resolve: (name) => {
+//         const pages = import.meta.glob("./Pages/**/*.vue", { eager: true });
+//         const page = pages[`./Pages/${name}.vue`];
+//         page.default.layout = page.default.layout || MainLayout;
+//         return page;
+//     },
+//     setup({ el, App, props, plugin }) {
+//         createApp({ render: () => h(App, props) })
+//             .use(plugin)
+//             .use(ZiggyVue)
+//             .mount(el);
+//     },
+// });
+// import './bootstrap';
+// import router from './router/router'
+// import App from './App.vue'
+// // import '../css/app.css'
+//
+// import { createApp, h } from 'vue';
+//
+// const app = createApp(App)
+// app.use(router)
+//
+// app.mount('#app')
