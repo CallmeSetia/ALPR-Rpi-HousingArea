@@ -1,8 +1,6 @@
-<script setup>
+@extends('layouts.app')
 
-</script>
-
-<template>
+@section('main')
     <main class="bg-gray-50 dark:bg-gray-900 h-screen">
         <div class="flex flex-col items-center justify-center px-6 pt-8 mx-auto md:h-screen pt:mt-0 dark:bg-gray-900">
             <div class="flex flex-col w-full max-w-xl p-6 space-y-8 items-center justify-center mb-8  rounded-lg shadow-xl  lg:mb-10 dark:text-white">
@@ -69,8 +67,4 @@
         </div>
 
     </main>
-</template>
-
-<style scoped>
-
-</style>
+@endsection
