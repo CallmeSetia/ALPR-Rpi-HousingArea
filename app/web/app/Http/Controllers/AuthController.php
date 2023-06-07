@@ -41,7 +41,7 @@ class AuthController extends Controller
             $this->clearLoginAttempts($request);
 
             // Generate token JWT
-            $token = $this->generateSanctumToken($user);
+            $token = $this->generateSanctumTokená($user);
 
             if ($request->wantsJson()) {
                 return response()->json([
