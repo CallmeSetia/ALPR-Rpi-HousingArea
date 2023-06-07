@@ -10,7 +10,8 @@
 
 
     <div class="flex flex-col items-center justify-center px-6 pt-8 mx-auto md:h-screen pt:mt-0 dark:bg-gray-900">
-        <a href="https://flowbite-admin-dashboard.vercel.app/" class="flex items-center justify-center mb-8 text-2xl font-semibold lg:mb-10 dark:text-white">
+        <a href="https://flowbite-admin-dashboard.vercel.app/"
+           class="flex items-center justify-center mb-8 text-2xl font-semibold lg:mb-10 dark:text-white">
             <span class="my-20"></span>
         </a>
         <!-- Card -->
@@ -18,7 +19,7 @@
             <h2 class="text-2xl font-bold text-center text-gray-900 dark:text-white">
                 Login Sistem
             </h2>
-            <form class="mt-8 space-y-6" >
+            <form class="mt-8 space-y-6">
                 @csrf
 
                 @component('components.input.input', ['label' => 'Username', 'type' => 'text', 'id' => 'username', 'placeholder' => 'Masukan Username',  'value' => '' ])
@@ -37,6 +38,5 @@
             </form>
         </div>
     </div>
-
 
 @endsection
