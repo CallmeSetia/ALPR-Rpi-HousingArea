@@ -32,4 +32,6 @@ Route::middleware('auth:sanctum')
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('user/penjaga', [UserController::class, 'getUserPenjaga'])->name('api.user.penjaga');
     Route::get('user/penghuni', [UserController::class, 'getUserPenghuni'])->name('api.user.penghuni');
+    Route::get('user/tamu', [UserController::class, 'getUserTamu'])->name('api.user.tamu');
+    Route::get('user/plat', [UserController::class, 'getUserTamu'])->name('api.user.plat_nomor');
 });

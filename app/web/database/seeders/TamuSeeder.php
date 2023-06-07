@@ -18,7 +18,7 @@ class TamuSeeder extends Seeder
         // Mendapatkan tanggal dan waktu saat ini
         $currentDateTime = Carbon::now();
 
-       for($i = 0; $i < 50; $i++) {
+       for($i = 0; $i < 100; $i++) {
            // Mengatur rentang waktu satu minggu terakhir
            $oneWeekAgo = $currentDateTime->subWeek();
 
@@ -28,11 +28,12 @@ class TamuSeeder extends Seeder
            // Format tanggal dan jam sesuai kebutuhan Anda
            $formattedDateTime = $createdDateTime->format('Y-m-d H:i:s');
            $tujuan = $faker->numberBetween(1, 9);
+           $approved_by = $faker->numberBetween(37, 45);
            Tamu::create([
                'nama' => $faker->name,
                'rumah_id' => $tujuan,
                'plat' => generatePlatNomor($faker),
-               'approved_by' => $tujuan,
+               'approved_by' => $approved_by,
                'created_at' => $createdDateTime,
            ]);
        }
