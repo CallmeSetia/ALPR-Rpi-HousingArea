@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>ًApplication</title>
+    <title>Aplikasi</title>
     @vite('resources/css/app.css')
 </head>
 <body>
-
-<div id="app"></div>
-@vite('resources/js/app.js')
+    <main class="bg-gray-50 dark:bg-gray-900 h-screen">
+        @yield('main')
+    </main>
 </body>
 </html>
