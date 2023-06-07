@@ -1,11 +1,5 @@
-<script setup>
-import {onMounted, ref} from 'vue'
-</script>
-
 <template>
-    <router-view/>
+<!--    How To Install Vue 3 in Laravel 10 with Vite.-->
+    <router-view></router-view>
 </template>
-
-<style scoped>
-
-</style>
+<script setup></script>
