@@ -11,6 +11,7 @@ use Illuminate\Validation\ValidationException;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+use Laravel\Sanctum\HasApiTokens;
 
 class AuthController extends Controller
 {
@@ -40,7 +41,7 @@ class AuthController extends Controller
             $this->clearLoginAttempts($request);
 
             // Generate token JWT
-            $token = $this->generateJwtToken($user);
+            $token = $this->generateSanctumToken($user);
 
             if ($request->wantsJson()) {
                 return response()->json([
@@ -135,6 +136,11 @@ class AuthController extends Controller
     protected function generateJwtToken($user)
     {
         $token = $user->createToken('MyApp')->plainTextToken;
+        return $token;
+    }
+    protected function generateSanctumToken($user)
+    {
+        $token = $user->createToken('api-token')->plainTextToken;
         return $token;
     }
 }

@@ -181,11 +181,10 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Laravel\Sanctum\SanctumServiceProvider::class,
+//        Inertia\ServiceProvider::class,
 
-
-        Inertia\ServiceProvider::class,
-
-        Tightenco\Ziggy\ZiggyServiceProvider::class,
+//        Tightenco\Ziggy\ZiggyServiceProvider::class,
 
         /*
          * Application Service Providers...
